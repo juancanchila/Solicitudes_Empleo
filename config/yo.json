@@ -1,0 +1,550 @@
+{
+  "_ayuda": "Se edita con el formulario: node scripts/editor.mjs. Lo marcado con ✏️ está por completar y no se imprime.",
+  "persona": {
+    "nombre": "Juan Guillermo López Canchila",
+    "nombreCorto": "Juan",
+    "correo": "juan.canchila@gmail.com",
+    "telefono": "315 041 6295",
+    "whatsapp": "573004407026",
+    "ciudad": "Cartagena, Colombia",
+    "documento": "",
+    "redes": {
+      "linkedin": "https://www.linkedin.com/in/juan-canchila/",
+      "github": "✏️ https://github.com/tu-usuario",
+      "portafolio": ""
+    },
+    "imagenes": {
+      "foto": "perfil/foto.png",
+      "firma": "perfil/firma.png"
+    }
+  },
+  "experiencia": [
+    {
+      "id": "ipsfusa",
+      "empresa": "IPS FUSA S.A.S.",
+      "cargo": "Soporte y Administración de Sistemas",
+      "ciudad": "",
+      "desde": "dic. 2025",
+      "hasta": "Actual",
+      "contacto": {
+        "nombre": "Jean Angarita",
+        "cargo": "Jefe inmediato",
+        "telefono": "310 644 2853"
+      },
+      "logros": {
+        "general": [
+          "Soporte de infraestructura, redes y software de la IPS para usuarios y sedes."
+        ],
+        "soporte-infraestructura": [
+          "Implementé SD-WAN con Fortinet para la red de las sedes.",
+          "Fortalecí la seguridad perimetral con Fortinet: políticas de firewall y VPN IPsec/IKEv2 para usuarios remotos y móviles.",
+          "Levanté y mantengo el inventario de equipos tecnológicos de las sedes.",
+          "Integré la mesa de ayuda con Jira Service Management, incluido el seguimiento de casos del software asistencial (Salud System).",
+          "Despliego y administro las aplicaciones internas (API Node.js, Intranet en Angular y apps móviles) en los servidores de la IPS.",
+          "Brindo soporte de infraestructura, redes y software a usuarios y sedes, y coordino con los proveedores de conectividad (Media Commerce, Tigo, Claro) la solución de incidentes y el retiro de equipos.",
+          "Gestiono los respaldos de bases de datos SQL Server y de Google Workspace."
+        ],
+        "programador": [
+          "Diseñé y desarrollé la API de la Intranet en Node.js (Express) con SQL Server y documentación Swagger, que usan las aplicaciones internas.",
+          "Construí módulos web en Angular (signals, rutas con guards, pruebas con Vitest): gestión de cartera, programación de pagos a proveedores, tableros y flujos de firma.",
+          "Desarrollé apps móviles con Ionic y Capacitor, como la firma digital de constancias de entrega de medicamentos.",
+          "Automaticé procesos con Python (renombrado y unión de documentos con OCR, ejecutables con PyInstaller) y con PowerShell.",
+          "Integré servicios externos: correo, Google Drive, Jira y la central telefónica Wolkvox para los informes de gestión."
+        ]
+      }
+    },
+    {
+      "id": "red724",
+      "empresa": "RED 724 TRADE S.A.S.",
+      "cargo": "Freelance Web Developer",
+      "ciudad": "",
+      "desde": "dic. 2023",
+      "hasta": "sep. 2025",
+      "contacto": {
+        "nombre": "Javier Díaz",
+        "cargo": "Contacto",
+        "telefono": "(+57) 300 822 6636"
+      },
+      "logros": {
+        "general": [
+          "Desarrollé y di soporte a aplicaciones móviles en Flutter y Kotlin.",
+          "Di soporte a servidores, configuré VPN, administré infraestructura en AWS y virtualicé entornos.",
+          "Proyecto destacado: KAPI – Punto de Venta N86, aplicación publicada y certificada por Credibanco en Colombia."
+        ],
+        "programador": [
+          "Desarrollé y di soporte a aplicaciones móviles en Flutter y Kotlin para varios clientes.",
+          "Administré la infraestructura en AWS, servidores y VPN de las aplicaciones."
+        ]
+      }
+    },
+    {
+      "id": "epa",
+      "empresa": "Establecimiento Público Ambiental de Cartagena – EPA",
+      "cargo": "Soporte y Administración de Sistemas",
+      "ciudad": "Cartagena",
+      "desde": "",
+      "hasta": "",
+      "contacto": {
+        "nombre": "Julio Miguel Pérez",
+        "cargo": "Contacto",
+        "telefono": "+57 324 681 5325"
+      },
+      "logros": {
+        "general": [
+          "Brindé soporte, desarrollo y mantenimiento a la Ventanilla Única Institucional y al Sistema de Autoliquidaciones.",
+          "Soporte a servicios en la nube, administración de infraestructura digital y despliegue de aplicaciones con prácticas DevOps y control de cambios."
+        ],
+        "programador": [
+          "Desarrollé y mantuve la Ventanilla Única Institucional: 80 % de cumplimiento MinTIC (2023).",
+          "Sistema de Autoliquidaciones: 66,67 % de reducción en los tiempos de respuesta (2025).",
+          "Despliegue de aplicaciones con prácticas DevOps, control de cambios y servicios en la nube."
+        ]
+      }
+    },
+    {
+      "id": "ipcc",
+      "empresa": "Instituto de Patrimonio y Cultura de Cartagena – IPCC",
+      "cargo": "Jefe de Sistemas",
+      "ciudad": "Cartagena",
+      "desde": "2021",
+      "hasta": "2022",
+      "contacto": null,
+      "logros": {
+        "general": [
+          "Administré la infraestructura tecnológica institucional, servidores y recursos informáticos, con virtualización y monitoreo de servicios.",
+          "Brindé soporte integral a usuarios y aseguré el cumplimiento de las políticas de tecnología y seguridad de la información.",
+          "Desarrollé y mantuve las aplicaciones internas y la página web institucional."
+        ],
+        "programador": [
+          "Desarrollé y mantuve la página web institucional: 83,6 % de cumplimiento FURAG (2022).",
+          "Aplicativo de Convocatorias: 66 % de reducción en los tiempos de respuesta (2022).",
+          "Desarrollé aplicaciones internas y administré la infraestructura donde corren."
+        ]
+      }
+    },
+    {
+      "id": "uniandes",
+      "empresa": "Uniandes Caribe",
+      "cargo": "Soporte Técnico",
+      "ciudad": "",
+      "desde": "mar. 2020",
+      "hasta": "may. 2020",
+      "contacto": {
+        "nombre": "Angélica Vanesa Rodríguez Zuluaga",
+        "cargo": "Jefe inmediato",
+        "telefono": "300 564 5241"
+      },
+      "logros": {
+        "general": [
+          "Soporte a equipos de cómputo, infraestructura tecnológica, redes, plataformas digitales, Office 365 y sistemas de información."
+        ]
+      }
+    },
+    {
+      "id": "gobolivar",
+      "empresa": "Gobernación de Bolívar",
+      "cargo": "Asesor Página Web",
+      "ciudad": "",
+      "desde": "feb. 2019",
+      "hasta": "dic. 2019",
+      "contacto": {
+        "nombre": "Jhon Garcerant",
+        "cargo": "Jefe inmediato",
+        "telefono": "300 811 2329"
+      },
+      "logros": {
+        "general": [
+          "Asesoré la implementación de las normas técnicas y lineamientos de Gobierno en Línea en los portales institucionales: accesibilidad, seguridad y estándares gubernamentales."
+        ],
+        "programador": [
+          "Asesoré la implementación de Gobierno en Línea en los portales institucionales: accesibilidad, seguridad y estándares gubernamentales."
+        ]
+      }
+    },
+    {
+      "id": "utadeo",
+      "empresa": "Universidad Jorge Tadeo Lozano",
+      "cargo": "Tecnólogo de Sistemas – Jefe de Sistemas",
+      "ciudad": "",
+      "desde": "mar. 2016",
+      "hasta": "dic. 2016",
+      "contacto": {
+        "nombre": "Glenda Olier",
+        "cargo": "Jefe inmediato",
+        "telefono": "(035) 655 4000"
+      },
+      "logros": {
+        "general": [
+          "Coordiné la infraestructura tecnológica, el software y el hardware institucional, con personal a cargo, garantizando la continuidad de los servicios de TI."
+        ]
+      }
+    },
+    {
+      "id": "alcaldia",
+      "empresa": "Alcaldía de Cartagena",
+      "cargo": "Web Master",
+      "ciudad": "Cartagena",
+      "desde": "oct. 2013",
+      "hasta": "dic. 2015",
+      "contacto": {
+        "nombre": "Silfredo Godoy",
+        "cargo": "Jefe inmediato",
+        "telefono": "+57 315 682 8676"
+      },
+      "logros": {
+        "general": [
+          "Administré y desarrollé la página web principal y los micrositios institucionales, y di soporte a las plataformas existentes."
+        ],
+        "programador": [
+          "Desarrollé y administré la página web principal y los micrositios institucionales.",
+          "Desarrollé aplicaciones web y di soporte a las plataformas existentes."
+        ]
+      }
+    }
+  ],
+  "educacion": [
+    {
+      "id": "edu-ingenieria",
+      "titulo": "Ingeniería de Sistemas",
+      "institucion": "Fundación de Educación Superior San José – Institución Tecnológica",
+      "anio": "Último año de formación"
+    },
+    {
+      "id": "edu-tecnologo",
+      "titulo": "Tecnólogo en Informática",
+      "institucion": "Soledad",
+      "anio": "2009 – 2010"
+    },
+    {
+      "id": "edu-tecnico",
+      "titulo": "Técnico en Informática",
+      "institucion": "Soledad",
+      "anio": "2007 – 2009"
+    }
+  ],
+  "certificaciones": [
+    {
+      "id": "cert-solid",
+      "nombre": "Principios SOLID y Clean Code",
+      "entidad": "Udemy",
+      "anio": "2025"
+    },
+    {
+      "id": "cert-lenguaje",
+      "nombre": "Lenguaje Claro para servidores y colaboradores públicos de Colombia",
+      "entidad": "GME",
+      "anio": "2021"
+    },
+    {
+      "id": "cert-integridad",
+      "nombre": "Integridad, Transparencia y lucha contra la corrupción",
+      "entidad": "Función Pública",
+      "anio": "2021"
+    },
+    {
+      "id": "cert-jae",
+      "nombre": "Formulación de Proyectos, Evaluación del desempeño, Código de Integridad y Planeación Estratégica",
+      "entidad": "J&AE",
+      "anio": "2021"
+    },
+    {
+      "id": "cert-android",
+      "nombre": "Desarrollo de Aplicaciones Android",
+      "entidad": "Vive Digital Cartagena",
+      "anio": "2015"
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Español",
+      "nivel": "Nativo"
+    },
+    {
+      "idioma": "Inglés",
+      "nivel": "Avanzado"
+    }
+  ],
+  "referencias": [
+    {
+      "nombre": "Jean Angarita",
+      "cargo": "Jefe inmediato · IPS FUSA S.A.S.",
+      "telefono": "310 644 2853"
+    },
+    {
+      "nombre": "Javier Díaz",
+      "cargo": "RED 724 TRADE S.A.S.",
+      "telefono": "300 822 6636"
+    }
+  ],
+  "perfiles": {
+    "programador": {
+      "clase": "PerfilProgramador",
+      "titulo": "Desarrollador Backend / Frontend",
+      "color": "#2563eb",
+      "firma": "cargo",
+      "adjuntaHojaDeVida": true,
+      "saludo": "Buen día, {{DESTINATARIO}}:",
+      "despedida": "Cordialmente,",
+      "resumen": "Ingeniero de Sistemas en último año de formación y desarrollador full stack con más de 10 años construyendo aplicaciones web y móviles para el sector público, la salud y el comercio. Trabajo con Node.js, PHP y Laravel en el backend; Angular, TypeScript e Ionic en el frontend; Flutter y Kotlin en móvil; y SQL Server, Docker y AWS en datos e infraestructura. Aplico principios SOLID, clean code, pruebas automatizadas y documentación. Mi experiencia en infraestructura me permite llevar las aplicaciones a producción de forma estable y segura.",
+      "habilidades": [
+        {
+          "grupo": "Backend",
+          "items": [
+            "Node.js (Express)",
+            "PHP / Laravel",
+            "APIs REST",
+            "Swagger / OpenAPI",
+            "Autenticación LDAP / JWT"
+          ]
+        },
+        {
+          "grupo": "Frontend",
+          "items": [
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "HTML5 / CSS3 / SCSS",
+            "Drupal / WordPress"
+          ]
+        },
+        {
+          "grupo": "Móvil",
+          "items": [
+            "Ionic + Capacitor",
+            "Flutter",
+            "Kotlin",
+            "Publicación Android / iOS"
+          ]
+        },
+        {
+          "grupo": "Datos",
+          "items": [
+            "SQL Server (T-SQL)",
+            "Modelado relacional",
+            "SQLite"
+          ]
+        },
+        {
+          "grupo": "DevOps y nube",
+          "items": [
+            "Git",
+            "Docker",
+            "PM2",
+            "AWS",
+            "Despliegue y control de cambios"
+          ]
+        },
+        {
+          "grupo": "Calidad",
+          "items": [
+            "SOLID y Clean Code",
+            "Pruebas (Jest, Vitest, node:test)",
+            "Documentación técnica"
+          ]
+        },
+        {
+          "grupo": "Automatización e IA",
+          "items": [
+            "Python",
+            "PowerShell",
+            "OCR",
+            "APIs de IA (Claude)"
+          ]
+        }
+      ],
+      "palabrasClave": [
+        "full stack",
+        "Node.js",
+        "Angular",
+        "TypeScript",
+        "PHP",
+        "Laravel",
+        "Flutter",
+        "Ionic",
+        "SQL Server",
+        "API REST",
+        "Docker",
+        "AWS",
+        "Git"
+      ],
+      "parrafoCarta": "Soy Ingeniero de Sistemas en último año de formación y desarrollador backend y frontend con más de 10 años de experiencia. Construyo APIs en Node.js y Laravel, aplicaciones en Angular e Ionic y apps móviles en Flutter y Kotlin. En mi cargo actual desarrollé de punta a punta la Intranet de una IPS (gestión de cartera, programación de pagos, firma digital e informes), y antes publiqué apps certificadas por Credibanco y reduje hasta en 66 % los tiempos de respuesta de trámites con sistemas web en entidades públicas."
+    },
+    "soporte-infraestructura": {
+      "clase": "PerfilSoporteInfraestructura",
+      "titulo": "Soporte de Infraestructura",
+      "color": "#0f766e",
+      "firma": "cargo",
+      "adjuntaHojaDeVida": true,
+      "saludo": "Buen día, {{DESTINATARIO}}:",
+      "despedida": "Cordialmente,",
+      "resumen": "Ingeniero de Sistemas en último año de formación, con más de 10 años en administración de tecnologías de la información, infraestructura, redes y seguridad. Administro servidores Linux y Windows virtualizados, redes cableadas e inalámbricas, seguridad perimetral con Fortinet (SD-WAN, VPN) y la continuidad de servicios críticos, on-premise y en AWS. Mi experiencia en desarrollo y soporte de aplicaciones me da una visión integral entre infraestructura, seguridad y software para resolver incidencias y tomar decisiones técnicas.",
+      "habilidades": [
+        {
+          "grupo": "Redes y seguridad",
+          "items": [
+            "Fortinet (FortiGate, SD-WAN)",
+            "VPN IPsec / IKEv2",
+            "Redes cableadas e inalámbricas (Wi-Fi)",
+            "Telefonía IP",
+            "Hardening de servidores",
+            "Control de accesos"
+          ]
+        },
+        {
+          "grupo": "Servidores y nube",
+          "items": [
+            "Linux",
+            "Windows Server (virtualización)",
+            "Docker",
+            "PM2",
+            "AWS",
+            "Active Directory / LDAP"
+          ]
+        },
+        {
+          "grupo": "Soporte y mesa de ayuda",
+          "items": [
+            "Jira Service Management",
+            "Soporte a usuarios y sedes",
+            "Software asistencial (Salud System)",
+            "Inventario tecnológico",
+            "Gestión de proveedores"
+          ]
+        },
+        {
+          "grupo": "Continuidad",
+          "items": [
+            "Respaldos SQL Server",
+            "Google Workspace",
+            "Recuperación de servicios",
+            "Monitoreo de servicios"
+          ]
+        },
+        {
+          "grupo": "Plataformas",
+          "items": [
+            "APIs REST",
+            "Despliegue de aplicaciones",
+            "Drupal / WordPress / Laravel",
+            "Git"
+          ]
+        }
+      ],
+      "palabrasClave": [
+        "soporte TI",
+        "infraestructura",
+        "redes",
+        "Fortinet",
+        "SD-WAN",
+        "VPN",
+        "Linux",
+        "AWS",
+        "mesa de ayuda",
+        "seguridad informática"
+      ],
+      "parrafoCarta": "Soy Ingeniero de Sistemas en último año de formación, con más de 10 años en infraestructura y soporte de TI. En mi cargo actual en una IPS con varias sedes implementé SD-WAN y reforcé la seguridad perimetral con Fortinet, levanté el inventario tecnológico, integré la mesa de ayuda con Jira y despliego las aplicaciones internas, además del soporte diario a usuarios, redes y software asistencial."
+    },
+    "personal": {
+      "clase": "PerfilPersonal",
+      "titulo": "",
+      "color": "#374151",
+      "firma": "personal",
+      "adjuntaHojaDeVida": false,
+      "saludo": "Hola, {{DESTINATARIO}}:",
+      "despedida": "Un abrazo,",
+      "resumen": "",
+      "habilidades": [],
+      "palabrasClave": [],
+      "parrafoCarta": ""
+    }
+  },
+  "soportes": [
+    {
+      "id": "hv-firmada",
+      "nombre": "Hoja de vida firmada (entregada a IPS FUSA)",
+      "tipo": "otro",
+      "archivo": "HV Juan Lopez Es IT admin firmada.pdf",
+      "relacion": {
+        "tipo": "experiencia",
+        "id": "ipsfusa"
+      },
+      "perfiles": [
+        "soporte-infraestructura"
+      ],
+      "fecha": "2025-12-22",
+      "notas": "Versión entregada al ingresar. Trae C.C."
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "SD-WAN y seguridad perimetral Fortinet",
+      "detalle": "IPS FUSA",
+      "anio": "2026",
+      "perfiles": [
+        "soporte-infraestructura"
+      ]
+    },
+    {
+      "nombre": "Intranet IPS FUSA",
+      "detalle": "API Node.js + Angular: cartera, pagos, firma digital e informes",
+      "anio": "2026",
+      "perfiles": [
+        "programador"
+      ]
+    },
+    {
+      "nombre": "App Vapaesa",
+      "detalle": "publicada en tiendas Android e iOS",
+      "anio": "2025",
+      "perfiles": [
+        "programador"
+      ]
+    },
+    {
+      "nombre": "KAPI – Punto de Venta N86",
+      "detalle": "certificada por Credibanco",
+      "anio": "2025",
+      "perfiles": [
+        "programador"
+      ]
+    },
+    {
+      "nombre": "Sistema Autoliquidaciones EPA",
+      "detalle": "66,67 % de reducción en tiempos de respuesta",
+      "anio": "2025",
+      "perfiles": [
+        "soporte-infraestructura"
+      ]
+    },
+    {
+      "nombre": "Ventanilla Única de atención EPA",
+      "detalle": "80 % de cumplimiento MinTIC",
+      "anio": "2023",
+      "perfiles": [
+        "soporte-infraestructura"
+      ]
+    },
+    {
+      "nombre": "Web Page IPCC",
+      "detalle": "83,6 % de cumplimiento FURAG",
+      "anio": "2022",
+      "perfiles": [
+        "soporte-infraestructura"
+      ]
+    },
+    {
+      "nombre": "Aplicativo Convocatorias IPCC",
+      "detalle": "66 % de reducción en tiempos de respuesta",
+      "anio": "2022",
+      "perfiles": [
+        "soporte-infraestructura"
+      ]
+    },
+    {
+      "nombre": "Web Page Gobernación de Bolívar",
+      "detalle": "puesto #7 en cumplimiento IGEL",
+      "anio": "2017",
+      "perfiles": []
+    }
+  ]
+}

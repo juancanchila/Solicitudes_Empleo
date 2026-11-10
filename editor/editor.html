@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi perfil · Agente de correos</title>
+  <link rel="stylesheet" href="/editor.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="quien">
+      <img id="mini-foto" alt="" hidden>
+      <div><strong id="titulo-nombre">Mi perfil</strong><small>Agente de correos personal</small></div>
+    </div>
+    <div class="estado">
+      <span id="pendientes" class="chip"></span>
+      <span id="cambios" class="chip aviso" hidden>Cambios sin guardar</span>
+      <a id="ver-hv" class="boton-enlace" target="hojas-de-vida">Ver hojas de vida</a>
+      <button id="guardar" class="primario">Guardar</button>
+    </div>
+  </header>
+
+  <nav class="pestanas" id="pestanas">
+    <button data-p="contacto" class="activa">Contacto</button>
+    <button data-p="imagenes">Foto y firma</button>
+    <button data-p="experiencia">Experiencia</button>
+    <button data-p="estudios">Estudios</button>
+    <button data-p="perfiles">Perfiles</button>
+    <button data-p="soportes">Soportes</button>
+    <button data-p="claves">Claves y Git</button>
+  </nav>
+
+  <main>
+    <section data-p="contacto" class="panel activa">
+      <h2>Datos de contacto</h2>
+      <p class="ayuda">Salen en la firma de todos los correos y en la hoja de vida. Lo que tenga ✏️ no se imprime.</p>
+      <div class="rejilla" id="form-contacto"></div>
+    </section>
+
+    <section data-p="imagenes" class="panel">
+      <h2>Foto y firma</h2>
+      <p class="ayuda">La foto va en la firma con cargo y en la hoja de vida (mejor cuadrada o circular, con fondo transparente). La firma escaneada va a la derecha de la firma del correo. Al subir una nueva, la anterior queda en perfil/anteriores.</p>
+      <div class="imagenes">
+        <div class="tarjeta imagen"><h3>Foto</h3><img id="img-foto" alt="Foto" hidden><p id="sin-foto" class="vacio">Sin foto</p><label class="boton">Cambiar foto<input type="file" accept=".png,.jpg,.jpeg" data-imagen="foto" hidden></label></div>
+        <div class="tarjeta imagen"><h3>Firma escaneada</h3><img id="img-firma" alt="Firma" class="firma" hidden><p id="sin-firma" class="vacio">Sin firma</p><label class="boton">Cambiar firma<input type="file" accept=".png,.jpg,.jpeg" data-imagen="firma" hidden></label></div>
+      </div>
+    </section>
+
+    <section data-p="experiencia" class="panel">
+      <div class="cab-panel"><h2>Experiencia</h2><button id="agregar-exp">+ Agregar experiencia</button></div>
+      <p class="ayuda">Los logros van por perfil: escribe uno por línea. Cada hoja de vida toma los del perfil. Si un perfil no tiene logros propios, usa los "general".</p>
+      <div id="lista-exp"></div>
+    </section>
+
+    <section data-p="estudios" class="panel">
+      <div class="cab-panel"><h2>Educación</h2><button data-agregar="educacion">+ Agregar</button></div>
+      <div id="lista-educacion"></div>
+      <div class="cab-panel"><h2>Certificaciones y cursos</h2><button data-agregar="certificaciones">+ Agregar</button></div>
+      <div id="lista-certificaciones"></div>
+      <div class="cab-panel"><h2>Idiomas</h2><button data-agregar="idiomas">+ Agregar</button></div>
+      <div id="lista-idiomas"></div>
+      <div class="cab-panel"><h2>Proyectos destacados</h2><button data-agregar="proyectos">+ Agregar</button></div>
+      <div id="lista-proyectos"></div>
+      <div class="cab-panel"><h2>Referencias</h2><button data-agregar="referencias">+ Agregar</button></div>
+      <div id="lista-referencias"></div>
+    </section>
+
+    <section data-p="perfiles" class="panel">
+      <div class="cab-panel"><h2>Perfiles</h2><button id="agregar-perfil">+ Nuevo perfil</button></div>
+      <p class="ayuda">Cada perfil es una clase (PerfilProgramador, PerfilSoporteInfraestructura, PerfilPersonal o Perfil genérico). Define la firma, la hoja de vida y la carta para ese tipo de cargo.</p>
+      <div id="lista-perfiles"></div>
+    </section>
+
+    <section data-p="soportes" class="panel">
+      <h2>Soportes</h2>
+      <p class="ayuda">Diplomas, certificados laborales, certificaciones, documento de identidad… Relaciónalos con una experiencia o estudio y con los perfiles para los que sirven: cuando pidan "envíe los soportes", el agente adjunta los que correspondan (siempre con vista previa).</p>
+      <form id="form-soporte" class="tarjeta">
+        <div class="rejilla">
+          <label class="ancho">Archivo <input type="file" name="archivo" required accept=".pdf,.png,.jpg,.jpeg,.docx,.doc,.xlsx,.zip"></label>
+          <label>Nombre <input name="nombre" placeholder="Acta de grado Ingeniería de Sistemas"></label>
+          <label>Tipo <select name="tipo" id="tipo-soporte"></select></label>
+          <label>Respalda a <select name="relacion" id="relacion-soporte"></select></label>
+          <label>Fecha del documento <input name="fecha" type="date"></label>
+          <fieldset class="ancho"><legend>Sirve para los perfiles (ninguno marcado = todos)</legend><div id="perfiles-soporte" class="checks"></div></fieldset>
+          <label class="ancho">Notas <input name="notas" placeholder="Opcional"></label>
+        </div>
+        <button class="primario">Subir soporte</button>
+      </form>
+      <div id="lista-soportes"></div>
+    </section>
+
+    <section data-p="claves" class="panel">
+      <h2>Claves y Git (.env)</h2>
+      <p class="ayuda">Se guardan solo en el archivo .env de tu equipo, que no se sube a Git. Las claves nunca se vuelven a mostrar: si el campo está vacío, se conserva la que ya está.</p>
+      <form id="form-env" class="tarjeta"><div class="rejilla" id="campos-env"></div><button class="primario">Guardar claves</button></form>
+    </section>
+  </main>
+
+  <div id="aviso" class="toast" hidden></div>
+  <script src="/editor.js"></script>
+</body>
+</html>
